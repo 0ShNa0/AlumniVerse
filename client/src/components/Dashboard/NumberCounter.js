@@ -5,7 +5,7 @@ const NumberCounter = ({ endNumber, duration }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    // Calculate the increment value and interval time
+  
     const increment = endNumber / (duration / 100);
     const interval = setInterval(() => {
       setCount((prevCount) => {
@@ -21,8 +21,8 @@ const NumberCounter = ({ endNumber, duration }) => {
   }, [endNumber, duration]);
 
   return (
-    <Typography style={{ textDecoration: 'none', color: '#212121', fontFamily: 'Playfair Display' ,fontSize:'22px'}}>
-      {count}
+    <Typography sx={{ textDecoration: 'none', color: 'black', fontFamily: 'Playfair Display' ,fontSize:'22px'}}>
+      {count}+
     </Typography>
   );
 };

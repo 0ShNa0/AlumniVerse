@@ -2,6 +2,7 @@ import React from 'react'
 import { Typography } from '@mui/material';
 import '../App.css';
 import Typewriter from 'typewriter-effect';
+import CardComponent from '../components/Dashboard/CardComponent';
 
 const Dashboard = () => {
   return (
@@ -37,7 +38,8 @@ const Dashboard = () => {
         fontSize: { xs: '20px', sm: '30px', md: '40px', lg: '50px' }, 
         fontWeight: 'bold', 
         textAlign: 'center', 
-        marginTop: '20px' 
+        marginTop: '20px' ,
+        color:'#00897b'
       }}
     >
       <Typewriter
@@ -50,6 +52,12 @@ const Dashboard = () => {
         }}
       />
     </Typography>
+    <div style={{display:'flex',alignItems:'center'}}>
+    <CardComponent phrase="Registered Members" count={400}/>
+    <CardComponent phrase="Countries Strong Base" count={45}/>
+    <CardComponent phrase="Outreach Events" count={80}/>
+    <CardComponent phrase="Memories" count={200}/>
+    </div>
    </>
   )
 }
