@@ -58,6 +58,12 @@ const Header = () => {
                   AlumCluster
                 </Link>
                 <Link
+                  to="/jobs"
+                  style={{ textDecoration: 'none', color: '#212121', fontFamily: 'Playfair Display' ,fontSize:'22px'}}
+                >
+                 Jobs
+                </Link>
+                <Link
                   to="/"
                   style={{ textDecoration: 'none', color: '#212121', fontFamily: 'Playfair Display' ,fontSize:'22px'}}
                 >
@@ -82,6 +88,9 @@ const Header = () => {
             </ListItem>
             <ListItem button component={Link} to="/clusters" onClick={handleDrawerClose}>
               <ListItemText primary="AlumCluster" />
+            </ListItem>
+            <ListItem button component={Link} to="/jobs" onClick={handleDrawerClose}>
+              <ListItemText primary="Jobs" />
             </ListItem>
           </List>
           <Divider />

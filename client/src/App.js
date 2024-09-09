@@ -5,6 +5,7 @@ import { BrowserRouter, Route,Routes } from 'react-router-dom';
 import Header from './components/Header';
 import {Box} from '@mui/material';
 import Login from './pages/Login';
+import Jobs from './pages/Jobs';
 import Clusters from './pages/Clusters';
 import Alumni from './pages/Alumni';
 import Donation from './pages/Donation';
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/alumni" element={<Alumni/>} /> 
         <Route exact path="/donation" element={<Donation/>} />  
         <Route exact path="/clusters" element={<Clusters/>} /> 
+        <Route exact path="/jobs" element={<Jobs/>} /> 
         <Route exact path="/" element={<Login onSignOut={handleSignOut}/>} />
         </Routes>
       </BrowserRouter> 

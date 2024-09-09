@@ -2,10 +2,13 @@ import React from 'react';
 import { Typography } from '@mui/material';
 import '../../App.css';
 import Typewriter from 'typewriter-effect';
+import alumniImage from '../../assets/alumni.jpeg';
 
 const Central = () => {
   return (
-    <div><Typography
+    <div style={{display:'flex', alignItems:'center'}}>
+      <div style={{marginLeft:'5%'}}>
+      <Typography
     sx={{
       fontSize: {
         xs: '12px',  
@@ -50,6 +53,8 @@ const Central = () => {
           }}
         />
       </Typography>
+      </div>
+     <img src={alumniImage} style={{ width: '40%', height: 'auto',marginTop:'5%',marginLeft:'5%',borderRadius:4 }}/>
       </div>
   )
 }
