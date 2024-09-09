@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <Paper elevation={3} style={{ position: 'sticky', top: 0, zIndex: 999 }}>
-      <AppBar position="static" elevation={8} sx={{ width: '100%', bgcolor: '#e1f5fe', boxShadow: 'initial' }}>
+      <AppBar position="static" elevation={8} sx={{ width: '100%', bgcolor: '#00897b', boxShadow: 'initial' }}>
         <Toolbar>
           <Stack
             direction="row"
