@@ -1,0 +1,24 @@
+h1 {
+  font-family: bayon;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.apply-button {
+  font-family: bayon;
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.apply-button:hover {
+  background-color: #45a049;
+}
