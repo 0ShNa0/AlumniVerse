@@ -4,7 +4,7 @@ import { Card,CardContent,Box, Typography } from '@mui/material';
 
 const CardComponent = ({phrase,count}) => {
   return (
-    <Box sx={{ maxWidth: {sx:'50px' ,md:'120px' ,lg:'450px'},
+    <Box sx={{ maxWidth: {sx:'20%' ,md:'20%' ,lg:'30%'},
     paddingLeft:{sx:'10px',md:'30px',lg:'50px'},
     paddingTop: {sx:'6px',md:'22px',lg:'40px'}
     }}>
