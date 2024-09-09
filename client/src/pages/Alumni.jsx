@@ -1,11 +1,12 @@
 import React from 'react'
-
+// import AluminiCards from '../components/Alumini/AlumniCards.js';
+import AluminiDirectory from '../components/Alumini/AlumniCards.js';
 const Alumni = () => {
   return (
    
     <div>
-   
-   hi
+     {/* <AluminiCards/> */}
+     <AluminiDirectory/>
     </div>
   )
 }
