@@ -57,10 +57,8 @@ import { useState, useEffect } from 'react';
 import Signup from './pages/signUp';
 
 function AppWrapper() {
-  const location = useLocation(); // Get current route
+  const location = useLocation(); 
   const [headerVisible, setHeaderVisible] = useState(true);
-
-  // Hide header for the login page
   useEffect(() => {
     if (location.pathname === '/login' || location.pathname=== '/signup') {
       setHeaderVisible(false);
@@ -81,7 +79,6 @@ function AppWrapper() {
           <Route exact path="/jobs" element={<Jobs />} />
           <Route exact path="/profile" element={<Alumni />} />
           <Route exact path="/signup" element={<Signup />} />
-         
           <Route exact path="/login" element={<Login onSignOut={() => setHeaderVisible(false)} />} />
         </Routes>
       </Box>
