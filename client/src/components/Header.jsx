@@ -64,11 +64,12 @@ const Header = () => {
                  Jobs
                 </Link>
                 <Link
-                  to="/"
+                  to="/login"
                   style={{ textDecoration: 'none', color: '#212121', fontFamily: 'Playfair Display' ,fontSize:'22px'}}
                 >
                   SignOut
                 </Link>
+                
               </Stack>
             )}
           </Stack>
