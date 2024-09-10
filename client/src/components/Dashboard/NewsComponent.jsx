@@ -2,7 +2,7 @@ import React from 'react';
 import {Card,CardContent,Typography,CardHeader } from '@mui/material';
 import '../../App.css';
 
-const NewsComponent = ({newsitem,heading}) => {
+const NewsComponent = ({newsitem,heading,image}) => {
   return (   
 <Card
 variant="outlined"
@@ -11,20 +11,26 @@ sx={{
   borderRadius: 1,
   color: 'black',
   width: '90%',
-  margin: 'auto', 
+
   marginTop:{sx:'0.008%',md:'0.4%',lg:'4%'},
-  maxHeight:"28vw"
+
+  marginBottom:{sx:'0.008%',md:'0.4%',lg:'4%'},
+  maxHeight:"20vw",
+  display:'flex'
 }}
 >
-
+<img src={image} style={{width:'40%'}}/>
+<div style={{marginLeft:'1%'}}>
 <Typography  sx={{
       textDecoration:'text-decoration-line',
       color: 'white',
       fontFamily: 'IBM Plex Serif',
-      fontSize: '22px',
-      padding:{ sx:'0.005%',md:'0.05%',lg:'0.5%'},
+      fontSize: '20px',
+      padding:{ sx:'0.02%',md:'0.1%',lg:'0.9%'},
       display:'flex',
-      justifyContent:'center'
+      justifyContent:'center',
+      margin:'auto',
+     
 
     }}>
       {heading}
@@ -35,13 +41,14 @@ sx={{
       textDecoration: 'none',
       color: 'black',
       fontFamily: 'EB Garamond',
-      fontSize: '20px',
+      fontSize: '18px',
       marginTop:{sx:'0.002%',md:'0.2%',lg:'2%'},
       padding:{ sx:'0.005%',md:'0.05%',lg:'0.5%'}
     }}
   >
     {newsitem}
   </Typography>
+  </div>
   </div>
 </Card>
 );
