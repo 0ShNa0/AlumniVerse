@@ -15,7 +15,7 @@ sx={{
   marginTop:{sx:'0.008%',md:'0.4%',lg:'4%'},
 
   marginBottom:{sx:'0.008%',md:'0.4%',lg:'4%'},
-  maxHeight:"20vw",
+  maxHeight:{sx:"40vw",md:"30vw",lg:"20vw"},
   display:'flex'
 }}
 >
@@ -41,7 +41,7 @@ sx={{
       textDecoration: 'none',
       color: 'black',
       fontFamily: 'EB Garamond',
-      fontSize: { sx:'12px',md:'14px',lg:'20px'},
+      fontSize: { sx:'10px',md:'12px',lg:'18px'},
       marginTop:{sx:'0.002%',md:'0.2%',lg:'2%'},
       padding:{ sx:'0.005%',md:'0.05%',lg:'0.5%'}
     }}

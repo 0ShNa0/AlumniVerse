@@ -12,7 +12,7 @@ const CardComponent = ({phrase,count}) => {
     <CardContent>
         <div style={{display:'flex',alignItems:'center'}}>
         <NumberCounter endNumber={count} duration={2000}/> 
-        <Typography sx={{ textDecoration: 'none', color: '#00897b', fontFamily: 'Playfair Display' ,fontSize:'22px', marginLeft:'12px'}}>
+        <Typography sx={{ textDecoration: 'none', color: '#00897b', fontFamily: 'Playfair Display' ,fontSize:{ sx:'12px',md:'14px',lg:'22px'}, marginLeft:'12px'}}>
             {phrase} </Typography>
        </div>
         </CardContent>
