@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card,CardContent,Typography,CardHeader } from '@mui/material';
+import {Card,Typography } from '@mui/material';
 import '../../App.css';
 
 const NewsComponent = ({newsitem,heading,image}) => {
@@ -12,11 +12,11 @@ sx={{
   color: 'black',
   width: '90%',
 
-  marginTop:{sx:'0.008%',md:'0.4%',lg:'4%'},
+  marginTop:{sx:'0.04%',md:'0.4%',lg:'4%'},
 
   marginBottom:{sx:'0.008%',md:'0.4%',lg:'4%'},
   maxHeight:{sx:"40vw",md:"30vw",lg:"20vw"},
-  display:'flex'
+  display:{sx:'grid',lg:'flex'}
 }}
 >
 <img src={image} style={{width:'40%'}}/>
