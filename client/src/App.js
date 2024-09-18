@@ -60,7 +60,7 @@ function AppWrapper() {
   const location = useLocation(); 
   const [headerVisible, setHeaderVisible] = useState(true);
   useEffect(() => {
-    if (location.pathname === '/login' || location.pathname=== '/signup') {
+    if (location.pathname === '/' || location.pathname=== '/signup') {
       setHeaderVisible(false);
     } else {
       setHeaderVisible(true);
@@ -79,7 +79,7 @@ function AppWrapper() {
           <Route exact path="/jobs" element={<Jobs />} />
           <Route exact path="/profile" element={<Alumni />} />
           <Route exact path="/signup" element={<Signup />} />
-          <Route exact path="/login" element={<Login onSignOut={() => setHeaderVisible(false)} />} />
+          <Route exact path="/" element={<Login onSignOut={() => setHeaderVisible(false)} />} />
         </Routes>
       </Box>
     </>

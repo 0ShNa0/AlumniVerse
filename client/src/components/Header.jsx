@@ -64,7 +64,7 @@ const Header = () => {
                  Jobs
                 </Link>
                 <Link
-                  to="/login"
+                  to="/"
                   style={{ textDecoration: 'none', color: '#212121', fontFamily: 'Playfair Display' ,fontSize:'22px'}}
                 >
                   SignOut
