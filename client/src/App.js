@@ -70,7 +70,8 @@ function AppWrapper() {
   return (
     <>
       {headerVisible && <Header />}
-      <Box width="600px" sx={{ width: { xl: '900px' } }} m="auto">
+      <Box 
+        m="auto">
         <Routes>
           <Route exact path="/dashboard" element={<Dashboard />} />
           <Route exact path="/alumni" element={<Alumni />} />
