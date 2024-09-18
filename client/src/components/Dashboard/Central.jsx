@@ -11,9 +11,9 @@ const Central = () => {
       <Typography
     sx={{
       fontSize: {
-        xs: '26px',  
-        sm: '30px', 
-        md: '40px',  
+        xs: '40px',  
+        sm: '60px', 
+        md: '70px',  
         lg: '150px'  
       },
       display: 'flex',
