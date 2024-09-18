@@ -3,7 +3,7 @@ import CardComponent from '../components/Dashboard/CardComponent';
 import Central from '../components/Dashboard/Central';
 import { NewsData } from '../utils/NewsData';
 import NewsComponent from '../components/Dashboard/NewsComponent';
-import { Container } from '@mui/material';
+import { Container,Box } from '@mui/material';
 import ArrowCircleRightSharpIcon from '@mui/icons-material/ArrowCircleRightSharp';
 import ArrowCircleLeftSharpIcon from '@mui/icons-material/ArrowCircleLeftSharp';
 const Dashboard = () => {
@@ -26,12 +26,12 @@ const Dashboard = () => {
   };
   return (  <>
       <Central />
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <Box sx={{ display: {sx:'grid',lg:'flex'}, alignItems: 'center' }}>
         <CardComponent phrase="Registered Members" count={400} />
         <CardComponent phrase="Countries Strong Base" count={45} />
         <CardComponent phrase="Outreach Events" count={80} />
         <CardComponent phrase="Memories" count={200} />
-      </div>
+      </Box>
       <Container sx={{display:'flex',alignItems:'center'}}>
       <ArrowCircleLeftSharpIcon onClick={handlePrevious}  fontSize="large" margin="auto"/>
       <NewsComponent
