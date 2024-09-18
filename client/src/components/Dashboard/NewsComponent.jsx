@@ -25,7 +25,7 @@ sx={{
       textDecoration:'text-decoration-line',
       color: 'white',
       fontFamily: 'IBM Plex Serif',
-      fontSize: '20px',
+      fontSize:{ sx:'12px',md:'14px',lg:'20px'},
       padding:{ sx:'0.02%',md:'0.1%',lg:'0.9%'},
       display:'flex',
       justifyContent:'center',
@@ -41,7 +41,7 @@ sx={{
       textDecoration: 'none',
       color: 'black',
       fontFamily: 'EB Garamond',
-      fontSize: '18px',
+      fontSize: { sx:'12px',md:'14px',lg:'20px'},
       marginTop:{sx:'0.002%',md:'0.2%',lg:'2%'},
       padding:{ sx:'0.005%',md:'0.05%',lg:'0.5%'}
     }}

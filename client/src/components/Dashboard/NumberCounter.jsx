@@ -21,7 +21,7 @@ const NumberCounter = ({ endNumber, duration }) => {
   }, [endNumber, duration]);
 
   return (
-    <Typography sx={{ textDecoration: 'none', color: 'black', fontFamily: 'Playfair Display' ,fontSize:'22px'}}>
+    <Typography sx={{ textDecoration: 'none', color: 'black', fontFamily: 'Playfair Display' ,fontSize:{ sx:'12px',md:'14px',lg:'22px'}}}>
       {count}+
     </Typography>
   );
