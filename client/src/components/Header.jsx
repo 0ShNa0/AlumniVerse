@@ -79,19 +79,58 @@ const Header = () => {
         <div style={{ width: '250px' }}>
           <List>
             <ListItem button component={Link} to="/dashboard" onClick={handleDrawerClose}>
-              <ListItemText primary="Dashboard" />
+              <ListItemText primary="Dashboard" 
+               primaryTypographyProps={{
+                style: {
+                  color: 'black',     
+                  fontFamily:'Playfair Display'
+                },
+              }}/>
             </ListItem>
             <ListItem button component={Link} to="/alumni" onClick={handleDrawerClose}>
-              <ListItemText primary="Alumni" />
+              <ListItemText primary="Alumni" 
+                  primaryTypographyProps={{
+                    style: {
+                      color: 'black',     
+                      fontFamily:'Playfair Display'
+                    },
+                  }}/>
             </ListItem>
             <ListItem button component={Link} to="/donation" onClick={handleDrawerClose}>
-              <ListItemText primary="Donation" />
+              <ListItemText primary="Donation" 
+                  primaryTypographyProps={{
+                    style: {
+                      color: 'black',     
+                      fontFamily:'Playfair Display'
+                    },
+                  }}/>
             </ListItem>
             <ListItem button component={Link} to="/clusters" onClick={handleDrawerClose}>
-              <ListItemText primary="AlumCluster" />
+              <ListItemText primary="AlumCluster" 
+                  primaryTypographyProps={{
+                    style: {
+                      color: 'black',     
+                      fontFamily:'Playfair Display'
+                    },
+                  }}/>
             </ListItem>
             <ListItem button component={Link} to="/jobs" onClick={handleDrawerClose}>
-              <ListItemText primary="Jobs" />
+              <ListItemText primary="Jobs"
+                  primaryTypographyProps={{
+                    style: {
+                      color: 'black',     
+                      fontFamily:'Playfair Display'
+                    },
+                  }}/>
+            </ListItem>
+            <ListItem button component={Link} to="/" onClick={handleDrawerClose}>
+              <ListItemText primary="SignOut"
+                  primaryTypographyProps={{
+                    style: {
+                      color: 'black',     
+                      fontFamily:'Playfair Display'
+                    },
+                  }}/>
             </ListItem>
           </List>
           <Divider />
